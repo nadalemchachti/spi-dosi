@@ -1,0 +1,32 @@
+ <div ng-controller="Enseignant">
+	 
+	 <form ng-submit="rechercherEnseignant(NomE)">
+	 <table>
+	 <tr><td><label>Rechercher par nom:</label></td><td><input type="text" ng-model="NomE"></td><td align="center" colspan="2"><input class="submit" type="submit" value="Rechercher"></td></tr>
+	 
+	 
+	 
+	 </table>
+	 </form>
+		 <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                   
+                        <tr ng-repeat="E in enseignants.data">
+                            <td>{{E.nom}}</td>
+                            <td>{{E.prenom}}</td>
+                            <td><button type="button" ng-click="remove(E.noEnseignant)" >Supprimer</button></td>
+                             <td><button type="button"><a href="#modifierEnseignant/{{E.noEnseignant}}">Modifier</a></button></td>
+                            <td><button type="button"><a href="#detailEnseignant/{{E.noEnseignant}}">Detail</a></button></td>                         
+                        </tr>
+                        
+                        <tr><td align="center" colspan="8"><button type="button"><a href="#ajoutEnseignant">Nouveau enseignant</a></button></td></tr>
+                    </tbody>
+                </table>
+          	
+	</div>

@@ -1,0 +1,30 @@
+ <div ng-controller="Formation">
+	 
+	 <form ng-submit="rechercherFormation(NomFormation)">
+	 <table>
+	 <tr><td><label>Rechercher par nom:</label></td><td><input type="text" ng-model="NomFormation"></td><td align="center" colspan="2"><input class="submit" type="submit" value="Rechercher"></td></tr>
+	 
+	 </table>
+	 </form>
+	 
+		 <table>
+                    <thead>
+                        <tr>
+                            <th>Code Formation</th>
+                            <th>Nom Formation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="f in formations.data">
+                            <td>{{f.codeFormation}}</td>
+                            <td>{{f.nomFormation}}</td>
+                            <td><button type="button" ng-click="remove(f.codeFormation)" >Supprimer</button></td>
+                             <td><button type="button"><a href="#modifierFormation/{{f.codeFormation}}">Modifier</a></button></td>
+                            <td><button type="button"><a href="#detailFormation/{{f.codeFormation}}">Detail</a></button></td>                         
+                        </tr>
+                        
+                        <tr><td align="center" colspan="8"><a href="#ajoutFormation"><button type="button">Nouvelle formation</button></a></td></tr>
+                    </tbody>
+                </table>
+          	
+	</div>

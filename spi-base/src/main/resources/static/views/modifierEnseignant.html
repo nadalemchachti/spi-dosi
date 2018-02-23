@@ -1,0 +1,21 @@
+    <div ng-controller="modifierEnseignantController"> 
+      <form  ng-submit="modifierEnseignant()">
+                <table>
+                <tr><td><label>N°Enseignant</label></td><td><input type="text" ng-model="enseignant.noEnseignant" disabled="disabled"></td></tr>
+                <tr><td><label>Nom</label></td><td><input type="text" ng-model="enseignant.nom"></td></tr>
+                <tr><td><label>Prenom</label></td><td><input type="text" ng-model="enseignant.prenom"></td></tr>
+                <tr><td><label>Adresse</label></td><td><input type="text" ng-model="enseignant.adresse"></td></tr>
+                 <tr><td><label>Code Postal</label></td><td><input type="text" ng-model="enseignant.codePostal"></td></tr>
+                <tr><td><label>EmailPerso</label></td><td><input type="text" ng-model="enseignant.emailPerso"></td></tr>
+                <tr><td><label>EmailUBO</label></td><td><input type="text" ng-model="enseignant.emailUbo"></td></tr>
+                <tr><td><label>Mobile</label></td><td><input type="text" ng-model="enseignant.mobile"></td></tr>
+                <tr><td><label>Sexe</label></td><td><input type="text" ng-model="enseignant.sexe"></td></tr>
+                <tr><td><label>Pays</label></td><td><input type="text" ng-model="enseignant.pays"></td></tr>
+                <tr><td><label>Telephone</label></td><td><input type="text" ng-model="enseignant.telephone"></td></tr>
+                <tr><td><label>Type</label></td><td><input type="text" ng-model="enseignant.type"></td></tr>
+                <tr><td><label>Ville</label></td><td><input type="text" ng-model="enseignant.ville"></td></tr>               
+                <tr><td align="center" colspan="2"><input class="submit" type="submit" value="modifier"></td></tr>
+                </table>
+                </form>	
+                </div>
+              

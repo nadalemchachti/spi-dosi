@@ -1,0 +1,16 @@
+    <div ng-controller="ajoutFormationController"> 
+    
+      <form  ng-submit="creerFormation()">
+                <table>
+                <tr><td><label>Code Formation</label></td><td><input type="text" ng-model="formationACreer.codeFormation"></td></tr>
+                <tr><td><label>Debut Accréditation</label></td><td><input type="text" ng-model="formationACreer.debutAccreditation"></td></tr>
+                <tr><td><label>Diplome</label></td><td><input type="text" ng-model="formationACreer.diplome"></td></tr>
+                <tr><td><label>Double Diplomation</label></td><td><input type="text" ng-model="formationACreer.doubleDiplome"></td></tr>
+                <tr><td><label>Fin Accréditation</label></td><td><input type="text" ng-model="formationACreer.finAccreditation"></td></tr>
+                <tr><td><label>N°Année</label></td><td><input type="text" ng-model="formationACreer.n0Annee"></td></tr>
+                <tr><td><label>Nom Formation</label></td><td><input type="text" ng-model="formationACreer.nomFormation"></td></tr>
+                <tr><td align="center" colspan="2"><input class="submit" type="submit" value="Créer"></td></tr>
+                </table>
+                </form>	
+                
+                </div>
